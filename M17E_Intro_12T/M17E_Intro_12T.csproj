@@ -67,11 +67,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="compras.aspx" />
+    <Content Include="cookies.aspx" />
     <Content Include="index.aspx" />
     <Content Include="resultado.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="compras.aspx.cs">
+      <DependentUpon>compras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="compras.aspx.designer.cs">
+      <DependentUpon>compras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cookies.aspx.cs">
+      <DependentUpon>cookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cookies.aspx.designer.cs">
+      <DependentUpon>cookies.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

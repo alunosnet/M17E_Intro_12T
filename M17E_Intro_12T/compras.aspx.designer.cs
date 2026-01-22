@@ -11,7 +11,7 @@ namespace M17E_Intro_12T
 {
 
 
-    public partial class index
+    public partial class compras
     {
 
         /// <summary>
@@ -24,75 +24,102 @@ namespace M17E_Intro_12T
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Label1 control.
+        /// tb_nome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox tb_nome;
 
         /// <summary>
-        /// tb_x control.
+        /// c_data_nasc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_x;
+        protected global::System.Web.UI.WebControls.Calendar c_data_nasc;
 
         /// <summary>
-        /// Label2 control.
+        /// tb_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.TextBox tb_email;
 
         /// <summary>
-        /// tb_y control.
+        /// dd_marcas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_y;
+        protected global::System.Web.UI.WebControls.DropDownList dd_marcas;
 
         /// <summary>
-        /// bt_somar control.
+        /// dd_modelos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bt_somar;
+        protected global::System.Web.UI.WebControls.DropDownList dd_modelos;
 
         /// <summary>
-        /// Label3 control.
+        /// rb_intel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.RadioButton rb_intel;
 
         /// <summary>
-        /// bt_resultado control.
+        /// rb_amd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bt_resultado;
+        protected global::System.Web.UI.WebControls.RadioButton rb_amd;
 
         /// <summary>
-        /// bt_cookies control.
+        /// rb_outro control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bt_cookies;
+        protected global::System.Web.UI.WebControls.RadioButton rb_outro;
+
+        /// <summary>
+        /// cb_aceitar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cb_aceitar;
+
+        /// <summary>
+        /// fu_foto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fu_foto;
+
+        /// <summary>
+        /// bt_comprar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bt_comprar;
     }
 }

@@ -40,5 +40,17 @@ namespace M17E_Intro_12T
             Response.Redirect(url);
             //Server.Transfer(url); //não atualiza a url no browser
         }
+
+        protected void bt_cookies_Click(object sender, EventArgs e)
+        {
+            //Criar cookie
+            HttpCookie novo = new HttpCookie("12T_Cookie");
+            //Definir a data em que expira
+            novo.Expires = DateTime.Now.AddDays(30);
+            //definir o valor
+            novo.Value = "Teste";
+            //enviar para o browser
+            Response.Cookies.Add(novo);
+        }
     }
 }

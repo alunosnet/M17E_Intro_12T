@@ -21,6 +21,8 @@
             <br />
             <asp:Button ID="bt_resultado" runat="server" 
                 Text="Mostrar resultado" OnClick="bt_resultado_Click" />
+            <asp:Button ID="bt_cookies" runat="server" Text="Criar cookie"
+                    OnClick="bt_cookies_Click"/>
         </div>
     </form>
 </body>
