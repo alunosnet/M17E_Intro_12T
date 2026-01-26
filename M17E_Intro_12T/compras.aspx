@@ -46,8 +46,9 @@
             <!-- Foto perfil -->
             <asp:FileUpload ID="fu_foto" runat="server" />
             <br />
-            <asp:Button ID="bt_comprar" runat="server" Text="Comprar" />
+            <asp:Button ID="bt_comprar" runat="server" Text="Comprar" OnClick="bt_comprar_Click" />
             <% Response.Write(DateTime.Now); %>
+            <asp:Label ID="lb_erro" runat="server" />
             <!-- Aviso dos cookies -->
         </div>
     </form>
