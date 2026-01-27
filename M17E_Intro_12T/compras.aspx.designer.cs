@@ -39,7 +39,7 @@ namespace M17E_Intro_12T
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar c_data_nasc;
+        protected global::System.Web.UI.WebControls.TextBox c_data_nasc;
 
         /// <summary>
         /// tb_email control.

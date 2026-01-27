@@ -47,6 +47,7 @@ namespace M17E_Intro_12T
 
         protected void bt_comprar_Click(object sender, EventArgs e)
         {
+            lb_erro.Text = "";
             //validação dos dados
             try
             {
@@ -59,7 +60,7 @@ namespace M17E_Intro_12T
                 if (string.IsNullOrEmpty(email) || !email.Contains("@") || !email.Contains("."))
                     throw new Exception("O email não é válido.");
                 //data nascimento
-                DateTime data = c_data_nasc.SelectedDate;
+                DateTime data =DateTime.Parse(c_data_nasc.Text);
                 TimeSpan idade = DateTime.Now - data;
                 if (idade.TotalDays / 365 < 18)
                     throw new Exception("Tem de ter pelo menos 18 anos.");
@@ -77,7 +78,7 @@ namespace M17E_Intro_12T
                     throw new Exception("Tem de aceitar as condições da compra.");
                 //guardar a imagem
                 //existe ficheiro?
-                if (fu_foto.FileName == "")
+                if (fu_foto.HasFile==false)
                     throw new Exception("Tem de enviar uma foto");
                 //validação do tipo de ficheiro
                 if (fu_foto.PostedFile.ContentType != "image/jpeg" &&
@@ -90,6 +91,10 @@ namespace M17E_Intro_12T
                     throw new Exception("O tamanho do ficheiro não pode ser 0 nem superior a 50MB");
                 }
                 //guardar no servidor
+                string ficheiro = Server.MapPath("~/Imagens");
+                ficheiro += "/" + fu_foto.FileName;
+                fu_foto.SaveAs(ficheiro);
+                lb_erro.Text = "Compra registada com sucesso.";
             }
             catch (Exception ex)
             {

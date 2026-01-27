@@ -16,7 +16,7 @@
             <br />
             <!-- Data Nascimento -->
             Data Nascimento: 
-            <asp:Calendar ID="c_data_nasc" runat="server"></asp:Calendar>
+            <asp:TextBox ID="c_data_nasc" runat="server" type="date" />
             <br />
             <!-- Email -->
             Email:
