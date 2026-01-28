@@ -1,4 +1,5 @@
-﻿using System;
+﻿using M17E_Intro_12T.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,17 @@ namespace M17E_Intro_12T
 
         protected void bt_login_Click(object sender, EventArgs e)
         {
-
+            //validar os dados
+            if (tb_email.Text=="" || tb_password.Text=="")
+            {
+                lb_erro.Text = "Login falhou. Tente novamente.";
+                return;
+            }
+            //Verificar o login
+            Utilizadores user = new Utilizadores();
+            user.email=tb_email.Text;
+            user.palavra_passe= tb_password.Text;
+            //TODO: CONTINUAR AQUI!!! Falta a STR de LIGAçÃO
         }
     }
 }

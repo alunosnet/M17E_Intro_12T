@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\bd_intro_12t.mdf" />
+    <Content Include="App_Data\bd_intro_12t_log.ldf">
+      <DependentUpon>bd_intro_12t.mdf</DependentUpon>
+    </Content>
     <Content Include="compras.aspx" />
     <Content Include="cookies.aspx" />
     <Content Include="index.aspx" />
@@ -76,6 +80,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BaseDados.cs" />
+    <Compile Include="Classes\Utilizadores.cs" />
     <Compile Include="compras.aspx.cs">
       <DependentUpon>compras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -106,6 +112,7 @@
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

@@ -8,7 +8,7 @@
     Palavra passe:
     <asp:TextBox ID="tb_password" runat="server" type="password" required="true" ></asp:TextBox>
     <br />
-    <asp:Button ID="bt_login" runat="server" Text="Login" />
+    <asp:Button ID="bt_login" runat="server" Text="Login" OnClick="bt_login_Click" />
     <br />
     <asp:Label ID="lb_erro" runat="server" />
 </asp:Content>
