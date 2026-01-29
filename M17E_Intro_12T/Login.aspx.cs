@@ -24,7 +24,7 @@ namespace M17E_Intro_12T
                 return;
             }
             //Verificar o login
-            Utilizadores user = new Utilizadores();
+            Classes.Utilizadores user = new Classes.Utilizadores();
             user.email=tb_email.Text;
             user.palavra_passe= tb_password.Text;
             if(user.VerificaLogin()==false)
