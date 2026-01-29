@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin.aspx" />
     <Content Include="App_Data\bd_intro_12t.mdf" />
     <Content Include="App_Data\bd_intro_12t_log.ldf">
       <DependentUpon>bd_intro_12t.mdf</DependentUpon>
@@ -77,9 +78,20 @@
     <Content Include="Login.aspx" />
     <Content Include="Public\CSS\estilos.css" />
     <Content Include="resultado.aspx" />
+    <Content Include="script_bd.sql" />
+    <Content Include="Utilizadores\DAO\adicionar.aspx" />
+    <Content Include="Utilizadores\DAO\gerir.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Classes\BaseDados.cs" />
     <Compile Include="Classes\Utilizadores.cs" />
     <Compile Include="compras.aspx.cs">
@@ -117,6 +129,13 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="MP_Admin.Master.cs">
+      <DependentUpon>MP_Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MP_Admin.Master.designer.cs">
+      <DependentUpon>MP_Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="resultado.aspx.cs">
       <DependentUpon>resultado.aspx</DependentUpon>
@@ -125,9 +144,31 @@
     <Compile Include="resultado.aspx.designer.cs">
       <DependentUpon>resultado.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utilizadores\DAO\adicionar.aspx.cs">
+      <DependentUpon>adicionar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilizadores\DAO\adicionar.aspx.designer.cs">
+      <DependentUpon>adicionar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilizadores\DAO\gerir.aspx.cs">
+      <DependentUpon>gerir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilizadores\DAO\gerir.aspx.designer.cs">
+      <DependentUpon>gerir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
+    <Content Include="MP_Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -138,6 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Imagens\" />
+    <Folder Include="Utilizadores\Codigo\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

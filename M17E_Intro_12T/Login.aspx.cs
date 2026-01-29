@@ -27,7 +27,28 @@ namespace M17E_Intro_12T
             Utilizadores user = new Utilizadores();
             user.email=tb_email.Text;
             user.palavra_passe= tb_password.Text;
-            //TODO: CONTINUAR AQUI!!! Falta a STR de LIGAçÃO
+            if(user.VerificaLogin()==false)
+            {
+                lb_erro.Text = "Login falhou. Tente novamente.";
+                return;
+            }
+            //iniciar sessão
+            Session["email"] = user.email;
+            Session["perfil"] = user.perfil;
+            Session["id"] = user.id;
+            Session["nome"] = user.nome;
+            //guardar dados do utilizador/browser
+            Session["ip"] = Request.UserHostAddress;
+            Session["useragente"] = Request.UserAgent;
+            //redirecionar o utilizador
+            if (user.perfil == 0)
+            {
+                Response.Redirect("admin.aspx");
+            }
+            if (user.perfil == 1)
+            {
+                Response.Redirect("funcionario.aspx");
+            }
         }
     }
 }

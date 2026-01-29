@@ -4,5 +4,9 @@ create table utilizadores(
 	email varchar(100) not null unique 
 		check (email like '%@%.%'),
 	nome varchar(100),
-	password varchar(
+	palavra_passe varchar(64),
+	sal int,
+	token varchar(100), --recuperação de palavra passe
+	data_validade date,
+	perfil int -- 0 admin 1 cliente 2 funcionário
 )
