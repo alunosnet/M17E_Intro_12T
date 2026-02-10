@@ -50,8 +50,8 @@ namespace M17E_Intro_12T.Classes
         }
         public void Adicionar()
         {
-            string sql = @"INSERT INTO utilizadores(email,nome,password,perfil,sal)
-                    VALUES (@email,@nome,@morada,@nif,HASHBYTES('SHA2_512',concat(@password,@sal)),@perfil,@sal)";
+            string sql = @"INSERT INTO utilizadores(email,nome,palavra_passe,perfil,sal)
+                    VALUES (@email,@nome,HASHBYTES('SHA2_512',concat(@password,@sal)),@perfil,@sal)";
             List<SqlParameter> parametros = new List<SqlParameter>()
             {
                 new SqlParameter()

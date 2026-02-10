@@ -77,9 +77,12 @@
     <Content Include="index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Public\CSS\estilos.css" />
+    <Content Include="Public\JS\codigo.js" />
     <Content Include="resultado.aspx" />
     <Content Include="script_bd.sql" />
+    <Content Include="Utilizadores\Codigo\EditarUtilizador.aspx" />
     <Content Include="Utilizadores\Codigo\gerir.aspx" />
+    <Content Include="Utilizadores\Codigo\RemoverUtilizador.aspx" />
     <Content Include="Utilizadores\DAO\adicionar.aspx" />
     <Content Include="Utilizadores\DAO\gerir.aspx" />
     <Content Include="Web.config" />
@@ -144,12 +147,26 @@
     <Compile Include="resultado.aspx.designer.cs">
       <DependentUpon>resultado.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utilizadores\Codigo\EditarUtilizador.aspx.cs">
+      <DependentUpon>EditarUtilizador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilizadores\Codigo\EditarUtilizador.aspx.designer.cs">
+      <DependentUpon>EditarUtilizador.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Utilizadores\Codigo\gerir.aspx.cs">
       <DependentUpon>gerir.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Utilizadores\Codigo\gerir.aspx.designer.cs">
       <DependentUpon>gerir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilizadores\Codigo\RemoverUtilizador.aspx.cs">
+      <DependentUpon>RemoverUtilizador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilizadores\Codigo\RemoverUtilizador.aspx.designer.cs">
+      <DependentUpon>RemoverUtilizador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utilizadores\DAO\adicionar.aspx.cs">
       <DependentUpon>adicionar.aspx</DependentUpon>
