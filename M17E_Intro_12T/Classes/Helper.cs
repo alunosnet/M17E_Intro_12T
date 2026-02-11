@@ -21,7 +21,7 @@ public class Helper
         mensagem.Body = texto;
         mensagem.IsBodyHtml = true;
         //servidor
-        smtp.Host = "smtp.mailtrap.io";
+        smtp.Host = "sandbox.smtp.mailtrap.io";
         smtp.Port = 2525;
         smtp.EnableSsl = true;
         smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;

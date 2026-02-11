@@ -164,7 +164,7 @@ namespace M17E_Intro_12T.Classes
         }
         public void recuperarPassword(string email, string guid)
         {
-            string sql = "UPDATE utilizadores set lnkRecuperar=@lnk WHERE email=@email";
+            string sql = "UPDATE utilizadores set token=@lnk WHERE email=@email";
 
             List<SqlParameter> parametros = new List<SqlParameter>()
     {
@@ -175,7 +175,7 @@ namespace M17E_Intro_12T.Classes
         }
         public void atualizarPassword(string guid, string password)
         {
-            string sql = "UPDATE utilizadores set password=HASHBYTES('SHA2_512',concat(@password,sal)),estado=1,lnkRecuperar=null WHERE lnkRecuperar=@lnk";
+            string sql = "UPDATE utilizadores set palavra_passe=HASHBYTES('SHA2_512',concat(@password,sal)),token=null WHERE token=@lnk";
 
             List<SqlParameter> parametros = new List<SqlParameter>()
     {

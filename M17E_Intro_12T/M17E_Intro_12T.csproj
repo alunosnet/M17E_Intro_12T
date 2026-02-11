@@ -96,6 +96,8 @@
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Classes\BaseDados.cs" />
+    <Compile Include="Classes\Helper.cs" />
+    <Compile Include="Classes\ReCaptcha.cs" />
     <Compile Include="Classes\Utilizadores.cs" />
     <Compile Include="compras.aspx.cs">
       <DependentUpon>compras.aspx</DependentUpon>
