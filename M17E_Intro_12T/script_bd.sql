@@ -10,3 +10,7 @@ create table utilizadores(
 	data_validade date,
 	perfil int -- 0 admin 1 cliente 2 funcionário
 )
+
+/* Criar um admin */
+INSERT INTO utilizadores(email,nome,palavra_passe,sal,perfil)
+VALUES ('admin@gmail.com','admin',HASHBYTES('SHA2_512','123450'),0,0);

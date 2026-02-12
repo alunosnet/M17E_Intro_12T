@@ -27,13 +27,13 @@ namespace M17E_Intro_12T
                 return;
             }
             //Validar recaptcha
-            var resposta = Request.Form["g-Recaptcha-Response"];
-            var validou = ReCaptcha.Validate(resposta);
-            if (validou==false)
-            {
-                lb_erro.Text = "Tem de provar que não é um robot.";
-                return;
-            }
+            //var resposta = Request.Form["g-Recaptcha-Response"];
+            //var validou = ReCaptcha.Validate(resposta);
+            //if (validou==false)
+            //{
+            //    lb_erro.Text = "Tem de provar que não é um robot.";
+            //    return;
+            //}
             //Verificar o login
             Classes.Utilizadores user = new Classes.Utilizadores();
             user.email=tb_email.Text;

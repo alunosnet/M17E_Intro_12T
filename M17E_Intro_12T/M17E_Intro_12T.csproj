@@ -78,6 +78,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Public\CSS\estilos.css" />
     <Content Include="Public\JS\codigo.js" />
+    <Content Include="recuperarpassword.aspx" />
     <Content Include="resultado.aspx" />
     <Content Include="script_bd.sql" />
     <Content Include="Utilizadores\Codigo\EditarUtilizador.aspx" />
@@ -142,6 +143,13 @@
       <DependentUpon>MP_Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recuperarpassword.aspx.cs">
+      <DependentUpon>recuperarpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recuperarpassword.aspx.designer.cs">
+      <DependentUpon>recuperarpassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="resultado.aspx.cs">
       <DependentUpon>resultado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
